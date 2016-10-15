@@ -6,8 +6,8 @@ var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
 var enemyImg=document.createElement("img");
 enemyImg.src="images/slime.gif";
-
-
+var person1=document.createElement("img");
+person1.src="images/";
 
 
 function draw(){
