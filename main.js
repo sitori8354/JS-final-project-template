@@ -33,7 +33,7 @@ function draw(){
   ctx.drawImage(person1,100,100);
   ctx.drawImage(person2,100,440);
   ctx.drawImage(tower,600,440);
-  ctx.drawImage(towerbtn,300,440);
+  ctx.drawImage(towerbtn,300,440,50,90);
   ctx.drawImage(shoot,300,200);
   ctx.drawImage(crosshair,200,200);
   ctx.drawImage(person3,100,200);
