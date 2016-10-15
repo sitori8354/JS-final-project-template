@@ -14,6 +14,13 @@ var tower=document.createElement("img");
 tower.src="images/tower.png";
 var towerbtn=document.createElement("img");
 towerbtn.src="images/tower-btn.png";
+var shoot=document.createElement("img");
+shoot.src="images/cannon-ball.png";
+var crosshair=document.createElement("img");
+crosshair.src="images/crosshair.png";
+var person3=document.createElement("img");
+person3.src="images/rukia.gif";
+
 
 
 
@@ -24,6 +31,9 @@ function draw(){
   ctx.drawImage(person2,100,440);
   ctx.drawImage(tower,600,440);
   ctx.drawImage(towerbtn,300,440);
+  ctx.drawImage(shoot,300,200);
+  ctx.drawImage(crosshair,200,200);
+  ctx.drawImage(person3,100,200);
 }
 setInterval(draw,16);
   
