@@ -12,6 +12,8 @@ var person2=document.createElement("img");
 person2.src="images/jason.gif";
 var tower=document.createElement("img");
 tower.src="images/tower.png";
+var towerbtn=document.createElement("img");
+towerbtn.src="images/tower-btn.png";
 
 
 
@@ -21,6 +23,7 @@ function draw(){
   ctx.drawImage(person1,100,100);
   ctx.drawImage(person2,100,440);
   ctx.drawImage(tower,600,440);
+  ctx.drawImage(towerbth,300,440);
 }
 setInterval(draw,16);
   
