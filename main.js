@@ -13,5 +13,5 @@ bglmg
 function draw(){
   ctx.drawImage(bglmg,0,0);
 }
-setinterval(draw,16);
+setInterval(draw,16);
   
