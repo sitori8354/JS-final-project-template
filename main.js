@@ -13,7 +13,7 @@ person1.src="images/daigh.gif";
 function draw(){
   ctx.drawImage(bglmg,0,0);
   ctx.drawImage(enemyImg,0,0);
-  ctx.drawImage(person1,10,10);
+  ctx.drawImage(person1,1000,1000);
 }
 setInterval(draw,16);
   
