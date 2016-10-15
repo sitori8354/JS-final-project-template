@@ -16,7 +16,7 @@ function draw(){
   ctx.drawImage(bglmg,0,0);
   ctx.drawImage(enemyImg,0,0);
   ctx.drawImage(person1,100,100);
-  ctx.drawImage(person2,100,460);
+  ctx.drawImage(person2,100,440);
 }
 setInterval(draw,16);
   
