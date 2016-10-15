@@ -8,5 +8,5 @@ var ctx=canvas.getContext("2d");
 function draw(){
   ctx.drawImage(bglmg,0,0);
 }
-draw();
+setTimeout(draw,1000);
   
