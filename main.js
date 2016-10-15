@@ -21,7 +21,7 @@ crosshair.src="images/crosshair.png";
 var person3=document.createElement("img");
 person3.src="images/rukia.gif";
 
-var enemy(){
+var enemy={
   x:96,
   y:480-32
 };
