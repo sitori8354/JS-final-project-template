@@ -5,7 +5,7 @@ var FPS=60;
 var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
 var enemyImg=document.createElement("img");
-enemyImg.src="images/slime.png";
+enemyImg.src="images/slime.gif";
 
 
 
