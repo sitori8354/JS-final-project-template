@@ -21,12 +21,15 @@ crosshair.src="images/crosshair.png";
 var person3=document.createElement("img");
 person3.src="images/rukia.gif";
 
-
+var enemy(){
+  x:96,
+  y:480-32
+};
 
 
 function draw(){
   ctx.drawImage(bglmg,0,0);
-  ctx.drawImage(enemyImg,0,0);
+  ctx.drawImage(enemyImg,enemy.x,enemy.y);
   ctx.drawImage(person1,100,100);
   ctx.drawImage(person2,100,440);
   ctx.drawImage(tower,600,440);
