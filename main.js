@@ -7,12 +7,13 @@ bglmg.src="images/map.png";
 var enemyImg=document.createElement("img");
 enemyImg.src="images/slime.gif";
 var person1=document.createElement("img");
-person1.src="images/";
+person1.src="images/daigh.gif";
 
 
 function draw(){
   ctx.drawImage(bglmg,0,0);
   ctx.drawImage(enemyImg,0,0);
+  ctx.drawImage(person1,10,10);
 }
 setInterval(draw,16);
   
