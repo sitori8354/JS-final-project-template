@@ -1,9 +1,11 @@
-var canvas=document.getElementByld("game-canvas");
+var canvas=document.getElementById("game-canvas");
 var ctx=canvas.getContext("2d");
 var FPS=60;
 
 var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
+var enemyImg=document.createElement("img");
+bglmg
 
 
 
