@@ -49,6 +49,7 @@ setInterval(draw,16);
 
 
 ///tower-bin設定
+var cursor={x:0,y:0};
 $("#target").mousemove(function(event){
   console.log("x:"+event.offsetX+",y:"+event.offsetY);
 });
