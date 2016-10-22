@@ -59,8 +59,12 @@ var isBuild=false;
 var towerimg={};
 var cursor={};
 $("#game-canvas").on("click",function(){
-  if (iscoll=true){
-  }
+  if (iscoll(cursor.x,cursor.y,bin.x,bin.y,100,100)){
+    if(isBuild){
+      isBuild=false;
+  }else{
+    isBuild=true;
+  });
      
 cursor.click();
 function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
