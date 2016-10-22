@@ -52,6 +52,5 @@ setInterval(draw,16);
 var cursor={x:0,y:0};
 
 $("#game-canvas").on("mousemove".function(event){
-  cursor=(x:+event.offsetX+,y:+event.offsetY
-                    );
+  cursor={x:+event.offsetX+,y:+event.offsetY};
 });
