@@ -44,7 +44,7 @@ function draw(){
   ctx.drawImage(crosshair,200,200);
   ctx.drawImage(person3,100,200);
 }
-setInterval(draw,1);
+setInterval(draw,10);
   
 
 
