@@ -54,3 +54,20 @@ var cursor={x:0,y:0};
 $("#game-canvas").on("mousemove",function(event){
   cursor={x:event.offsetX,y:event.offsetY};
 });
+
+var isBuild=false;
+var towerimg={};
+var cursor={};
+$("#game-canvas").on("click",function(){
+  if (iscoll=true){
+  }
+     
+cursor.click();
+function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
+  if( pointX>=targetX
+    && pointX<=targetX+targetWidth
+    && pointY>=targetY
+    && pointY<=targetY+targetHeight){
+    return true;}else{
+      return false;}
+}
