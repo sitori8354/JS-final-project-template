@@ -63,8 +63,8 @@ $("#game-canvas").on("click",function(){
     if(isBuild){
       isBuild=false;
   }else{
-    isBuild=true;
-  })
+    isBuild=true;}
+  }});
      
 cursor.click();
 function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
