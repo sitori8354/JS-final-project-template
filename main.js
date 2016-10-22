@@ -2,6 +2,7 @@ var canvas=document.getElementById("game-canvas");
 var ctx=canvas.getContext("2d");
 var FPS=60;
 
+///畫上基本圖像
 var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
 var enemyImg=document.createElement("img");
@@ -21,6 +22,7 @@ crosshair.src="images/crosshair.png";
 var person3=document.createElement("img");
 person3.src="images/rukia.gif";
 
+///設定圖像位置
 var enemy={
   x:96,
   y:480-32
@@ -44,3 +46,9 @@ function draw(){
 }
 setInterval(draw,16);
   
+
+
+///tower-bin設定
+$("#target").mousemove(function(event){
+  console.log("x:"+event.offsetX+",y:"+event.offsetY);
+});
