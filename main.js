@@ -50,7 +50,7 @@ setInterval(draw,16);
 
 ///tower-bin設定
 var cursor={x:0,y:0};
-var target=tower;
-$("game-canvas").on("mousemove".function(event){
+
+$("#game-canvas").on("mousemove".function(event){
   console.log("x:"+event.offsetX+",y:"+event.offsetY);
 });
