@@ -56,7 +56,7 @@ $("#game-canvas").on("mousemove",function(event){
 });
 
 var isBuild=false;
-var towerimg={};
+var tower={};
 var cursor={};
 $("#game-canvas").on("click",function(){
   if (iscoll(cursor.x,cursor.y,bin.x,bin.y,100,100)){
