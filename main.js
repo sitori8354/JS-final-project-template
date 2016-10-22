@@ -38,11 +38,14 @@ function draw(){
   ctx.drawImage(enemyImg,enemy.x,enemy.y);
   ctx.drawImage(person1,100,100);
   ctx.drawImage(person2,100,440);
-  ctx.drawImage(tower,cursor.x,cursor.y);
   ctx.drawImage(towerbtn,bin.x,bin.y,100,100);
   ctx.drawImage(shoot,300,200);
   ctx.drawImage(crosshair,200,200);
   ctx.drawImage(person3,100,200);
+  if(isBuild){
+  ctx.drawImage(tower,cursor.x,cursor.y);
+  ctx.drawImage(tower,towerimg.x,towerimg.y);
+  }
 }
 setInterval(draw,10);
   
