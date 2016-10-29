@@ -67,11 +67,8 @@ var cursor={};
 var towerShow={};
 $("#game-canvas").on("click",function(){
   if (iscoll(cursor.x,cursor.y,bin.x,bin.y,100,100)){
-    if(isBuild){
-      isBuild=false;
-  }else{
-    isBuild=true;}
-  }else{isBuild=false;}
+    if(isBuild){isBuild=false;}
+    else{isBuild=true;}else{isBuild=false;}
   if (isBuild&&iscoll(cursor.x,cursor.y)){
   towerShow.x=cursor.x;
   towerShow.y=cursor.y;
