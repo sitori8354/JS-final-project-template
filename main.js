@@ -45,7 +45,7 @@ function draw(){
   }
   ctx.drawImage(tower,(towerShow.x)-(towerShow.x%32),(towerShow.y)-(towerShow.y%32));
 }
-setInterval(draw,10);
+setInterval(draw,1000/FPS);
   
 
 
