@@ -80,3 +80,10 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
       return false;}
 }
 
+//座標限定
+function math(){
+(towerShow.x*1)%32
+  console.log;
+  
+  
+}
