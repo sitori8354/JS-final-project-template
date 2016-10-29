@@ -36,13 +36,13 @@ var bin={
 //畫上物件
 function draw(){
   ctx.drawImage(bglmg,0,0);
-  ctx.drawImage(enemyImg,enemy.x,enemy.y);
-  ctx.drawImage(person1,100,100);
-  ctx.drawImage(person2,100,440);
+  ctx.drawImage(slimeImg,enemy.x,enemy.y);
+  //ctx.drawImage(person1,100,100);
+  //ctx.drawImage(person2,100,440);
   ctx.drawImage(towerbtn,bin.x,bin.y,100,100);
-  ctx.drawImage(shoot,300,200);
-  ctx.drawImage(crosshair,200,200);
-  ctx.drawImage(person3,100,200);
+  //ctx.drawImage(shoot,300,200);
+  //ctx.drawImage(crosshair,200,200);
+  //ctx.drawImage(person3,100,200);
   if(isBuild){
   ctx.drawImage(tower,cursor.x,cursor.y);
   //ctx.drawImage(tower,towerimg.x,towerimg.y);
