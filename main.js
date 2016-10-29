@@ -85,4 +85,4 @@ var enemy={
    this.x=(this.x)/1+0
    this.y=(this.y)/1-(64/60)
   }};  
-
+ 
