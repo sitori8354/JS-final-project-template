@@ -46,6 +46,7 @@ function draw(){
   if(isBuild){
   ctx.drawImage(tower,cursor.x,cursor.y);
   ctx.drawImage(tower,towerimg.x,towerimg.y);
+  ctx.drawImage(tower,towerShow.x,towerShow.y);
   }
 }
 setInterval(draw,10);
