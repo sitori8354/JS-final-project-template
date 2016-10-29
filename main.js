@@ -85,5 +85,5 @@ var enemy={
    direction={x:0,y:-(64/60)}
    this.x=direction.x 
    this.y=direction.y
-  }}; 
+  }};  
 
