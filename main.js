@@ -85,7 +85,7 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
 ///建造塔
 var towerShow={};
 
-if(isBuild&&iscoll(cursor.x,cursor.y,bin.x,bin.y,100,100)){
+if(isBuild&&iscoll(cursor.x,cursor.y)){
   towerShow.x=cursor.x;
   towerShow.y=cursor.y;
 }
