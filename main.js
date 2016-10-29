@@ -45,7 +45,7 @@ function draw(){
   ctx.drawImage(person3,100,200);
   if(isBuild){
   ctx.drawImage(tower,cursor.x,cursor.y);
-  ctx.drawImage(tower,towerimg.x,towerimg.y);
+  //ctx.drawImage(tower,towerimg.x,towerimg.y);
   }
   ctx.drawImage(tower,towerShow.x,towerShow.y);
 }
