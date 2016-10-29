@@ -81,7 +81,7 @@ var enemy={
   y:480-32,
   speedx:0,
   speedy:64,
-  move:function move(){  
+  function move(){  
    direction={x:0,y:-(64/60)}
    //setInterval(direction,1000/FPS);
   }}; 
