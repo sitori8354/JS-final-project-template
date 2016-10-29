@@ -71,6 +71,10 @@ $("#game-canvas").on("click",function(){
   }else{
     isBuild=true;}
   }else{isBuild=false;}
+if(isBuild&&iscoll(cursor.x,cursor.y)){
+  towerShow.x=cursor.x;
+  towerShow.y=cursor.y;
+}
 });
      
 function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
