@@ -47,7 +47,7 @@ function draw(){
   ctx.drawImage(tower,cursor.x,cursor.y);
   //ctx.drawImage(tower,towerimg.x,towerimg.y);
   }
-  ctx.drawImage(tower,towerShow.x,towerShow.y);
+  ctx.drawImage(tower,towerShow.x-cursor.x%,towerShow.y-cursor.y%);
 }
 setInterval(draw,10);
   
@@ -78,12 +78,4 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
     && pointY<=targetY+targetHeight){
     return true;}else{
       return false;}
-}
-
-//座標限定
-function math(){
-(towerShow.x*1)%32
-  console.log;
-  
-  
 }
