@@ -2,7 +2,7 @@
 var canvas=document.getElementById("game-canvas");
 var ctx=canvas.getContext("2d");
 var FPS=60;
-  
+   
 ///畫上基本圖像
 var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
