@@ -83,6 +83,6 @@ var enemy={
   speedy:64,
   move:function(){  
    this.x=this.x+0 
-   this.y=this.y-(64/FPS)
+   this.y=this.y-(64/60)
   }};  
 
