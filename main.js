@@ -75,7 +75,7 @@ $("#game-canvas").on("click",function(){
   if (isBuild&&iscoll(cursor.x,cursor.y)){
   towerShow.x=cursor.x;
   towerShow.y=cursor.y;
-  isBuild=false;
+  isBuild=true;
   }
   });
      
