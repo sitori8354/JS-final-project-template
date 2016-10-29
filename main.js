@@ -24,10 +24,6 @@ towerbtn.src="images/tower-btn.png";
 //person3.src="images/rukia.gif";
 
 ///設定圖像位置
-var enemy={
-  x:96,
-  y:480-32
-};
 var bin={
   x:540,
   y:380
@@ -80,4 +76,10 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
       return false;}
 }
 //設定敵人
-
+var enemy={
+  x:96,
+  y:480-32,
+  speedx:0,
+  speedy:64,
+  direction{x:0,y:64/60}
+};
