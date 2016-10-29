@@ -84,4 +84,4 @@ var enemy={
   move:function(){  
    direction={x:0,y:-(64/60)}
   }};
-enemy();
+move();
