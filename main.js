@@ -81,5 +81,5 @@ var enemy={
   y:480-32,
   speedx:0,
   speedy:64,
-  direction{x:0,y:-(64/60)}
+  direction{x:0,y:-2}
 };
