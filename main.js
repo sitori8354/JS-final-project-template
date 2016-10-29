@@ -47,7 +47,7 @@ function draw(){
   ctx.drawImage(tower,cursor.x,cursor.y);
   //ctx.drawImage(tower,towerimg.x,towerimg.y);
   }
-  ctx.drawImage(tower,towerShow.x-cursor.x%32,towerShow.y-cursor.y%32);
+  ctx.drawImage(tower,(towerShow.x)-(cursor.x%32),(towerShow.y)-(cursor.y%32));
 }
 setInterval(draw,10);
   
