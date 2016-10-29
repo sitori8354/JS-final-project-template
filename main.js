@@ -82,8 +82,7 @@ var enemy={
   speedx:0,
   speedy:64,
   move:function(){  
-   direction={x:0,y:-(64/60)}
-   this.x=direction.x 
-   this.y=direction.y
+   this.x=this.x+0 
+   this.y=this.y-(64/FPS)
   }};  
 
