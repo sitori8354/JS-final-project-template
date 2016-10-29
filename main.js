@@ -70,14 +70,14 @@ $("#game-canvas").on("click",function(){
     if(isBuild){
       isBuild=false;
   }else{
-    isBuild=true;}
-  }else{isBuild=false;}
-if(isBuild&&iscoll(cursor.x,cursor.y)){
+    isBuild=true;
+  }else{isBuild=false;}}
+  if (isBuild&&iscoll(cursor.x,cursor.y)){
   towerShow.x=cursor.x;
   towerShow.y=cursor.y;
   isBuild=false;
-}
-});
+  }
+  });
      
 function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
   if( pointX>=targetX
@@ -87,14 +87,4 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
     return true;}else{
       return false;}
 }
-
-///建造塔
-var towerShow={};
-
-if(isBuild&&iscoll(cursor.x,cursor.y)){
-  towerShow.x=cursor.x;
-  towerShow.y=cursor.y;
-}
-
-
 
