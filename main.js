@@ -1,3 +1,4 @@
+//基本設定
 var canvas=document.getElementById("game-canvas");
 var ctx=canvas.getContext("2d");
 var FPS=60;
@@ -32,7 +33,7 @@ var bin={
   y:380
 };
 
-
+//畫上物件
 function draw(){
   ctx.drawImage(bglmg,0,0);
   ctx.drawImage(enemyImg,enemy.x,enemy.y);
@@ -58,6 +59,7 @@ $("#game-canvas").on("mousemove",function(event){
   cursor={x:event.offsetX,y:event.offsetY};
 });
 
+///出現塔
 var isBuild=false;
 var towerimg={};
 var cursor={};
@@ -78,3 +80,14 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
     return true;}else{
       return false;}
 }
+
+///建造塔
+var towerShow={};
+
+if(isBuild&&iscoll(cursor.x,cursor.y,bin.x,bin.y,100,100)){
+  towerShow.x=cursor.x;
+  towerShow.y=cursor.y;
+}
+
+
+
