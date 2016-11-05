@@ -92,7 +92,7 @@ var enemy={
           this.y,
           this.speed/FPS,
           this.speed/FPS)){
-console.log("go");
+console.log(go);
 };  
   }};  
  
