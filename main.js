@@ -99,6 +99,7 @@ if(this.x>enemyPath[this.pathDes].x){
    speedy=0;
    this.x=this.x+this.speedx/FPS;
    this.y=this.y-this.speedy/FPS;
+   console.log("go")
 }else if(this.x<enemyPath[this.pathDes].x){
    speedx=64;
    speedy=0;
