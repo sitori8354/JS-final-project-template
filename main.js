@@ -94,6 +94,7 @@ var enemy={
 this.x=enemyPath[this.pathDes].x;
 this.y=enemyPath[this.pathDes].y;     
 this.pathDes++;
+console.log("go1")
 if(this.x>enemyPath[this.pathDes].x){
    speedx=-64;
    speedy=0;
