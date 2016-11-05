@@ -93,18 +93,29 @@ var enemy={
           this.y,
           this.speed/FPS,
           this.speed/FPS)){
-console.log(go);
-};  
+console.log("go")};  
+
+//設定下個路徑點     
+this.x=enemyPath[this.pathDes].x;
+this.y=enemyPath[this.pathDes].y;     
+this.pathDes++;
+if(this.x>enemyPath[this.pathDes].x){
+   speedx=-64;
+   speedy=0;
+}else if(this.x<enemyPath[this.pathDes].x){
+   speedx=64;
+   speedy=0;
+};
+if(this.y>enemyPath[this.pathDes].y){
+   speedx=0;
+   speedy=64;
+}else if(this.y<enemyPath[this.pathDes].y){
+   speedx=0;
+   speedy=-64;
+};     
   }};  
  
  ///製造路徑點
  
 var enemyPath=[{x:96,y:64},{x:384,y:64},{x:384,y:190},{x:224,y:190},{x:224,y:320},{x:544,y:320},{x:544,y:96}];
- this.x=enemyPath[this.pathDes].x;
-this.pathDes++;
-if(this.x>enemyPath[this.pathDes].x){
-   speedx=-64;
-   speedy=0;
-};
 
- 
