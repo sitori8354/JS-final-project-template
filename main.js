@@ -98,8 +98,6 @@ console.log("go1")
 if(this.x>enemyPath[this.pathDes].x){
    speedx=-64;
    speedy=0;
-   this.x=this.x+this.speedx/FPS;
-   this.y=this.y-this.speedy/FPS;
    console.log("go")
 }else if(this.x<enemyPath[this.pathDes].x){
    speedx=64;
@@ -108,13 +106,11 @@ if(this.x>enemyPath[this.pathDes].x){
 }else if(this.y>enemyPath[this.pathDes].y){
    speedx=0;
    speedy=64;
-   this.x=this.x+this.speedx/FPS;
-   this.y=this.y-this.speedy/FPS;
+   console.log("go4")
 }else if(this.y<enemyPath[this.pathDes].y){
    speedx=0;
    speedy=-64;
-   this.x=this.x+this.speedx/FPS;
-   this.y=this.y-this.speedy/FPS;
+   console.log("go5")
 };};}};  
  
  
