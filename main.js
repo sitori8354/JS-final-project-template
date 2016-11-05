@@ -77,15 +77,15 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
       return false;}
 }
 //設定敵人
-var enemy={
-  x:96,
-  y:480-32,
-  speedx:0,
-  speedy:64,
-  move:function(){  
-   this.x=this.x+this.speedx/FPS;
-   this.y=this.y-this.speedy/FPS;
-  }};  
+//var enemy={
+  //x:96,
+  //y:480-32,
+  //speedx:0,
+  //speedy:64,
+  //move:function(){  
+   //this.x=this.x+this.speedx/FPS;
+   //this.y=this.y-this.speedy/FPS;
+  //}};  
  
  ///製造路徑點
  
