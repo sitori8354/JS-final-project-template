@@ -95,26 +95,25 @@ this.y=enemyPath[this.pathDes].y;
 this.pathDes++;
 console.log("go1")
 if(this.x>enemyPath[this.pathDes].x){
-   speedx=-64;
-   speedy=0;
+   this.speedx=-64;
+   this.speedy=0;
    console.log("go")
 }else if(this.x<enemyPath[this.pathDes].x){
-   speedx=64;
-   speedy=0;
+   this.speedx=64;
+   this.speedy=0;
    console.log("go3")
 }else if(this.y>enemyPath[this.pathDes].y){
-   speedx=0;
-   speedy=64;
+   this.speedx=0;
+   this.speedy=64;
    console.log("go4")
 }else{
-   speedx=0;
-   speedy=-64;
+   this.speedx=0;
+   this.speedy=-64;
    console.log("go5")
 };
    };
    this.x=this.x+this.speedx/FPS;
-   this.y=this.y+this.speedy/FPS;
-   console.log("go6")  
+   this.y=this.y+this.speedy/FPS;  
   }
 
 };  
