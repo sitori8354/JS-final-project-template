@@ -114,6 +114,7 @@ if(this.x>enemyPath[this.pathDes].x){
    };
    this.x=this.x+this.speedx/FPS;
    this.y=this.y+this.speedy/FPS;
+   console.log("go6")  
   }
 
 };  
