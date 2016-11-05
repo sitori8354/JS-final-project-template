@@ -34,7 +34,7 @@ function draw(){
   enemy.move(); 
   ctx.drawImage(bglmg,0,0);
   ctx.drawImage(slimeImg,enemy.x,enemy.y);
-  ctx.drawImage(person1,100,100);
+  //ctx.drawImage(person1,100,100);
   //ctx.drawImage(person2,100,440);
   ctx.drawImage(towerbtn,bin.x,bin.y,100,100);
   //ctx.drawImage(shoot,300,200);
