@@ -8,7 +8,7 @@ var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
 var slimeImg=document.createElement("img");
 slimeImg.src="images/slime.gif";
-//var person1=document.createElement("img");
+var person1=document.createElement("img");
 //person1.src="images/daigh.gif";
 //var person2=document.createElement("img");
 //person2.src="images/jason.gif";
@@ -34,7 +34,7 @@ function draw(){
   enemy.move(); 
   ctx.drawImage(bglmg,0,0);
   ctx.drawImage(slimeImg,enemy.x,enemy.y);
-  //ctx.drawImage(person1,100,100);
+  ctx.drawImage(person1,100,100);
   //ctx.drawImage(person2,100,440);
   ctx.drawImage(towerbtn,bin.x,bin.y,100,100);
   //ctx.drawImage(shoot,300,200);
@@ -87,5 +87,7 @@ var enemy={
    this.y=this.y-this.speedy/FPS;
   }};  
  
+ ///製造路徑點
  
- 
+var enemyPath=[
+   {x:96,y:64}{x:384,y:64}];
