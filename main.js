@@ -77,6 +77,8 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
       return false;}
 }
 //設定敵人
+///製造路徑點
+var enemyPath=[{x:96,y:64},{x:384,y:64},{x:384,y:190},{x:224,y:190},{x:224,y:320},{x:544,y:320},{x:544,y:96}];
 var enemy={
   x:96,
   y:480-32,
@@ -114,9 +116,5 @@ if(this.y>enemyPath[this.pathDes].y){
    this.x=this.x+this.speedx/FPS;
    this.y=this.y-this.speedy/FPS;
 };};}};  
- 
- ///製造路徑點
- 
-var enemyPath=[{x:96,y:64},{x:384,y:64},{x:384,y:190},{x:224,y:190},{x:224,y:320},{x:544,y:320},{x:544,y:96}];
  
  
