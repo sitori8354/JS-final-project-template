@@ -89,5 +89,5 @@ var enemy={
  
  ///製造路徑點
  
-var enemyPath=[
-   {x:96,y:64}{x:384,y:64}];
+//var enemyPath=[
+   //{x:96,y:64}{x:384,y:64}];
