@@ -87,13 +87,13 @@ var enemy={
   move:function(){  
    this.x=this.x+this.speedx/FPS;
    this.y=this.y-this.speedy/FPS;
-   if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){console.log("go")};  
+   if(iscoll(enemyPath[this.pathDes]. x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){console.log("go")};  
 
 //設定下個路徑點     
 this.x=enemyPath[this.pathDes].x;
 this.y=enemyPath[this.pathDes].y;     
 this.pathDes++;
-if(this.x>enemyPath[this.pathDes].x){
+if(this.x>enemyPath[this.pathDes]. x){
    speedx=-64;
    speedy=0;
 }else if(this.x<enemyPath[this.pathDes].x){
