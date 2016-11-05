@@ -95,16 +95,24 @@ this.pathDes++;
 if(this.x>enemyPath[this.pathDes].x){
    speedx=-64;
    speedy=0;
+   this.x=this.x+this.speedx/FPS;
+   this.y=this.y-this.speedy/FPS;
 }else if(this.x<enemyPath[this.pathDes].x){
    speedx=64;
    speedy=0;
+   this.x=this.x+this.speedx/FPS;
+   this.y=this.y-this.speedy/FPS;
 };
 if(this.y>enemyPath[this.pathDes].y){
    speedx=0;
    speedy=64;
+   this.x=this.x+this.speedx/FPS;
+   this.y=this.y-this.speedy/FPS;
 }else if(this.y<enemyPath[this.pathDes].y){
    speedx=0;
    speedy=-64;
+   this.x=this.x+this.speedx/FPS;
+   this.y=this.y-this.speedy/FPS;
 };};}};  
  
  ///製造路徑點
