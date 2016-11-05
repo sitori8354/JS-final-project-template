@@ -31,7 +31,7 @@ var bin={
 
 //畫上物件
 function draw(){
-  //enemy.move(); 
+  enemy.move(); 
   ctx.drawImage(bglmg,0,0);
   ctx.drawImage(slimeImg,enemy.x,enemy.y);
   ctx.drawImage(person1,100,100);
