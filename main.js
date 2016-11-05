@@ -86,18 +86,16 @@ var enemy={
   move:function(){  
    this.x=this.x+this.speedx/FPS;
    this.y=this.y-this.speedy/FPS;
-  }};  
- 
- ///製造路徑點
- 
-var enemyPath=[{x:96,y:64},{x:384,y:64},{x:384,y:190},{x:224,y:190},{x:224,y:320},{x:544,y:320},{x:544,y:96}];
-if(iscoll(enemyPath[this.pathDes].x,
+   if(iscoll(enemyPath[this.pathDes].x,
           enemyPath[this.pathDes].y,
           this.x,
           this.y,
           this.speed/FPS,
           this.speed/FPS)){
 console.log("go");
-};
-   
-   
+};  
+  }};  
+ 
+ ///製造路徑點
+ 
+var enemyPath=[{x:96,y:64},{x:384,y:64},{x:384,y:190},{x:224,y:190},{x:224,y:320},{x:544,y:320},{x:544,y:96}];
