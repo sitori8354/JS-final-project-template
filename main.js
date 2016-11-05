@@ -111,3 +111,4 @@ if(this.y>enemyPath[this.pathDes].y){
  
 var enemyPath=[{x:96,y:64},{x:384,y:64},{x:384,y:190},{x:224,y:190},{x:224,y:320},{x:544,y:320},{x:544,y:96}];
  
+ 
