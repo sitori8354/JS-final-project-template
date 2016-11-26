@@ -203,11 +203,7 @@ var tower={
      return;}
   }
   this.aimingEnemyId=null;
-  };
- 
-
-
-}
+  };}
 
 
 
