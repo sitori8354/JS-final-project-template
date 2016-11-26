@@ -161,6 +161,7 @@ function Enemy(){
 if(this.pathDes==enemyPath.length-1){
    this.hp=0;
    tree=tree-10;}
+      else{
 this.x=enemyPath[this.pathDes].x;
 this.y=enemyPath[this.pathDes].y;     
 this.pathDes++;
@@ -181,7 +182,8 @@ if(this.x>enemyPath[this.pathDes].x){
    this.speedx=0;
    this.speedy=64;
    console.log("go5")
-};        
+};   
+      };
    };
    this.x=this.x+this.speedx/FPS;
    this.y=this.y+this.speedy/FPS;  
