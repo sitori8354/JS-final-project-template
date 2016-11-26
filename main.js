@@ -2,6 +2,8 @@
 var canvas=document.getElementById("game-canvas");
 var ctx=canvas.getContext("2d");
 var FPS=60;
+var enemies=[];
+var clock=0;
    
 ///畫上基本圖像
 var bglmg=document.createElement("img");
@@ -45,6 +47,13 @@ function draw(){
   //ctx.drawImage(tower,towerimg.x,towerimg.y);
   }
   ctx.drawImage(tower,(towerShow.x)-(towerShow.x%32),(towerShow.y)-(towerShow.y%32));
+if(clock%60==0){
+  var newEnemy=new Enemy();
+  enemies.push(newEnemy);}
+for(var i=0;i<enemies.length;i++){
+   enemies[i].move();
+   ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
+}
 }
 setInterval(draw,1000/FPS);
   
