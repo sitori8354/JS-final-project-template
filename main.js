@@ -63,8 +63,10 @@ for(var i=0;i<enemies.length;i++){
    ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
    clock++;     
 }
-//血量
-   ctx.fillText("血量:1000",100,100);
+//血量金錢分數
+   ctx.fillText("血量:1000",0,0);
+   ctx.fillText("分數:0",0,10);      
+   ctx.fillText("孔方兄:0",0,20);      
 
 }
 setInterval(draw,1000/FPS);
