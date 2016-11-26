@@ -32,7 +32,7 @@ var bin={
 };
 
 //畫上物件
-ctx.font="200px Arial";
+ctx.font="24px Arial";
 ctx.fillstyle="white";
 function draw(){
   enemy.move(); 
