@@ -4,7 +4,10 @@ var ctx=canvas.getContext("2d");
 var FPS=60;
 var enemies=[];
 var clock=0;
-               
+var tree=100;
+var score=0;
+var money=0;               
+
 ///畫上基本圖像
 var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
@@ -66,9 +69,6 @@ for(var i=0;i<enemies.length;i++){
    clock++;     
 }
 //血量金錢分數
-  var tree=100;
-  var score=0;
-  var money=0;
   ctx.fillText("血量:"+tree,0,20);
   ctx.fillText("分數:"+score,0,45);      
   ctx.fillText("錢:"+money,0,70);      
