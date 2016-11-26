@@ -183,9 +183,12 @@ var enemy=new Enemy()
 
 
 //塔基本設定
-function tower(){
-  this.range=96,
-  this.aimingEnemyId=null,
+var tower(){
+  shoot:function(){},
+  fireRate:1,
+  readyToShootTime:1,   
+  range:96,
+  aimingEnemyId:null,
   function searchEnemy(){
   for(var i=0;i<enemies.length;i++){
   var distance=Math.sqrt(
@@ -193,6 +196,10 @@ function tower(){
   );
   if(distance<=this.range){
      this.aimingEnemyId=i;
+     //發射時間倒數設定
+     if(this.readyToShootTime<=0){
+     this.shoot();
+     this.readyToShootTime=this.fireRate;}
      return;}
   }
   this.aimingEnemyId=null;
