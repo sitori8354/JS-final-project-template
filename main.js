@@ -40,7 +40,7 @@ function draw(){
   //ctx.drawImage(person2,100,440);
   ctx.drawImage(towerbtn,bin.x,bin.y,100,100);
   //ctx.drawImage(shoot,300,200);
-  tower.searchEnemy();
+  smalltower.searchEnemy();
    if(tower.aimingEnemyId!=null){
       var id=tower.aimingEnemyId;
       ctx.drawImage(crosshair,enemies[id].x,enemies[id].y);
