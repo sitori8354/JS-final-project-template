@@ -66,9 +66,12 @@ for(var i=0;i<enemies.length;i++){
    clock++;     
 }
 //血量金錢分數
-   ctx.fillText("血量:"+tree,0,20);
-   ctx.fillText("分數:0",0,45);      
-   ctx.fillText("錢:0",0,70);      
+  var tree=100;
+  var score=0;
+  var money=0;
+  ctx.fillText("血量:"+tree,0,20);
+  ctx.fillText("分數:"+score,0,45);      
+  ctx.fillText("錢:"+money,0,70);      
 
 }
 setInterval(draw,1000/FPS);
@@ -156,7 +159,7 @@ function Enemy(){
   this.move=function(){
      if(this.pathDes==enemyPath.length-1){
        this.hp=0;
-       tree=0;
+       tree=tree-10;
        }
      if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){    
 this.x=enemyPath[this.pathDes].x;
