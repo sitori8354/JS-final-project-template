@@ -164,7 +164,7 @@ if(this.x>enemyPath[this.pathDes].x){
    this.speedx=64;
    this.speedy=0;
    console.log("go3")
-}else if(this.y>enemyPath[this.pathDes].y){
+}else if(this.y>enemyPath[this.pathDes].y){ 
    this.speedx=0;
    this.speedy=-64;
    console.log("go4")
