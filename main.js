@@ -30,7 +30,7 @@ var bin={
   x:540,
   y:380
 };
-
+ 
 //畫上物件
 ctx.font="24px Arial";
 ctx.fillstyle="white";
