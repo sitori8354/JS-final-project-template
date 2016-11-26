@@ -157,11 +157,10 @@ function Enemy(){
   this.pathDes=0; 
   this.speed=64; 
   this.move=function(){
-     if(this.pathDes==enemyPath.length-1){
-       this.hp=0;
-       var tree=tree-10;
-       }
-     if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){    
+     if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){  
+if(this.pathDes==enemyPath.length-1){
+   this.hp=0;
+   tree=tree-10;}
 this.x=enemyPath[this.pathDes].x;
 this.y=enemyPath[this.pathDes].y;     
 this.pathDes++;
