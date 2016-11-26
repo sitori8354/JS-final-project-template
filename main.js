@@ -186,7 +186,7 @@ var enemy=new Enemy()
 function tower(){
   this.range=96,
   this.aimingEnemyId=null,
-  this.searchEnemy=function(){
+  function searchEnemy(){
   for(var i=0;i<enemies.length;i++){
   var distance=Math.sqrt(
   Math.pow(this.x-enemies[i].x,2)+Math.pow(this.y-enemies[i].y,2)
