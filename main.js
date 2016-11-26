@@ -146,8 +146,11 @@ if(this.x>enemyPath[this.pathDes].x){
    this.speedx=0;
    this.speedy=64;
    console.log("go5")
-};
+};        
    };
+   this.x=this.x+this.speedx/FPS;
+   this.y=this.y+this.speedy/FPS;  
+};
 };
  
 var enemy=new Enemy()
