@@ -159,7 +159,7 @@ function Enemy(){
   this.move=function(){
      if(this.pathDes==enemyPath.length-1){
        this.hp=0;
-       tree=tree-10;
+       var tree=tree-10;
        }
      if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){    
 this.x=enemyPath[this.pathDes].x;
