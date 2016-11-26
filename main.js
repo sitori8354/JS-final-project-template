@@ -4,7 +4,7 @@ var ctx=canvas.getContext("2d");
 var FPS=60;
 var enemies=[];
 var clock=0;
-   
+    
 ///畫上基本圖像
 var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
