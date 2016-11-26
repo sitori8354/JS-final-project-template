@@ -20,8 +20,8 @@ var towerbtn=document.createElement("img");
 towerbtn.src="images/tower-btn.png";
 //var shoot=document.createElement("img");
 //shoot.src="images/cannon-ball.png";
-//var crosshair=document.createElement("img");
-//crosshair.src="images/crosshair.png";
+var crosshair=document.createElement("img");
+crosshair.src="images/crosshair.png";
 //var person3=document.createElement("img");
 //person3.src="images/rukia.gif";
 
@@ -40,7 +40,11 @@ function draw(){
   //ctx.drawImage(person2,100,440);
   ctx.drawImage(towerbtn,bin.x,bin.y,100,100);
   //ctx.drawImage(shoot,300,200);
-  //ctx.drawImage(crosshair,200,200);
+  tower.searchEnemy();
+   if(tower.aimingEnemyId!=null){
+      var id=tower.aimingEnemyId;
+      ctx.drawImage(crosshair,enemies[id].x,enemies[id].y);
+   }
   //ctx.drawImage(person3,100,200);
   if(isBuild){
   ctx.drawImage(tower,cursor.x,cursor.y);
@@ -48,14 +52,18 @@ function draw(){
   }
   ctx.drawImage(tower,(towerShow.x)-(towerShow.x%32),(towerShow.y)-(towerShow.y%32));
 //敵人工廠
-   if(clock%60==0){  
+   if(clock%80==0){  
    var newEnemy=new Enemy();
   enemies.push(newEnemy);}
 for(var i=0;i<enemies.length;i++){
+   if(enemies[i].hp<=0){
+   enemies.splice(i,1);
+   }
    enemies[i].move();
    ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
 }
-ctx.fillText("血量:1000",100,100);
+//血量
+   ctx.fillText("血量:1000",100,100);
 
 }
 setInterval(draw,1000/FPS);
@@ -130,7 +138,9 @@ if(this.x>enemyPath[this.pathDes].x){
 
 };  
 */
+//敵人設定(工廠改造版)
 function Enemy(){
+  this.hp=10
   this.x=96;
   this.y=480-32;
   this.speedx=0,
@@ -139,6 +149,8 @@ function Enemy(){
   this.pathDes=0; 
   this.speed=64; 
   this.move=function(){
+     if(this.pathDes==enemyPath.length-1){
+     }
      if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){    
 this.x=enemyPath[this.pathDes].x;
 this.y=enemyPath[this.pathDes].y;     
@@ -168,3 +180,35 @@ if(this.x>enemyPath[this.pathDes].x){
 };
  
 var enemy=new Enemy()   
+
+
+//塔基本設定
+function tower(){
+  this.range:96,
+  this.aimingEnemyId:null,
+  this.searchEnemy=function(){
+  for(var i=0;i<enemies.length;i++){
+  var distance=Math.sqrt(
+  Math.pow(this.x-enemies[i].x,2)+Math.pow(this.y-enemies[i].y,2)
+  );
+  if(distance<=this.range){
+     this.aimingEnemyId=i;
+     return;}
+  }
+  this.aimingEnemyId=null;
+  };
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
