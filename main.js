@@ -52,7 +52,7 @@ function draw(){
   }
   ctx.drawImage(tower,(towerShow.x)-(towerShow.x%32),(towerShow.y)-(towerShow.y%32));
 //敵人工廠
-   if(clock%80==0){  
+   if(clock%1000==0){  
    var newEnemy=new Enemy();
   enemies.push(newEnemy);}
 for(var i=0;i<enemies.length;i++){
