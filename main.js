@@ -64,9 +64,11 @@ for(var i=0;i<enemies.length;i++){
    clock++;     
 }
 //血量金錢分數
-   ctx.fillText("血量:1000",0,0);
-   ctx.fillText("分數:0",0,10);      
-   ctx.fillText("孔方兄:0",0,20);      
+   ctx.font="24px";
+   ctx.fillstyle="white";
+   ctx.fillText("血量:1000",0,10);
+   ctx.fillText("分數:0",0,20);      
+   ctx.fillText("孔方兄:0",0,30);      
 
 }
 setInterval(draw,1000/FPS);
