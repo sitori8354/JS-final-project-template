@@ -153,4 +153,4 @@ if(this.x>enemyPath[this.pathDes].x){
 };
 };
  
-var enemy=new Enemy()
+var enemy=new Enemy() 
