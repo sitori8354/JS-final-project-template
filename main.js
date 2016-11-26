@@ -87,8 +87,7 @@ var enemy={
   pathDes:0, 
   speed:64, 
   move:function(){  
-  
-   if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){
+  if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){
       //設定下個路徑點     
 this.x=enemyPath[this.pathDes].x;
 this.y=enemyPath[this.pathDes].y;     
@@ -115,7 +114,39 @@ if(this.x>enemyPath[this.pathDes].x){
    this.x=this.x+this.speedx/FPS;
    this.y=this.y+this.speedy/FPS;  
   }
+   
 
 };  
- 
+
+function Enemy(){
+  this.x=96;
+  this.y=480-32;
+  this.direction={x:0,y:-1};
+  this.pathDes=0; 
+  this.speed=64; 
+  this.move=function(){
+     if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){    
+this.x=enemyPath[this.pathDes].x;
+this.y=enemyPath[this.pathDes].y;     
+this.pathDes++;
+console.log("go1")
+if(this.x>enemyPath[this.pathDes].x){
+   this.speedx=-64;
+   this.speedy=0;
+   console.log("go")
+}else if(this.x<enemyPath[this.pathDes].x){
+   this.speedx=64;
+   this.speedy=0;
+   console.log("go3")
+}else if(this.y>enemyPath[this.pathDes].y){
+   this.speedx=0;
+   this.speedy=-64;
+   console.log("go4")
+}else{
+   this.speedx=0;
+   this.speedy=64;
+   console.log("go5")
+};
+   };
+};
  
