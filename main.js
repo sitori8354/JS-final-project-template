@@ -121,6 +121,8 @@ if(this.x>enemyPath[this.pathDes].x){
 function Enemy(){
   this.x=96;
   this.y=480-32;
+  this.speedx=0,
+  this.speedy=-64,
   this.direction={x:0,y:-1};
   this.pathDes=0; 
   this.speed=64; 
