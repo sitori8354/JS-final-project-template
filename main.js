@@ -38,9 +38,9 @@ var bin={
 ctx.font="24px Arial";
 ctx.fillStyle="white";
 function draw(){
-  enemy.move(); 
+  //enemy.move(); 
   ctx.drawImage(bglmg,0,0);
-  ctx.drawImage(slimeImg,enemy.x,enemy.y);
+  //ctx.drawImage(slimeImg,enemy.x,enemy.y);
   //ctx.drawImage(person1,100,100);
   //ctx.drawImage(person2,100,440);
   ctx.drawImage(towerbtn,bin.x,bin.y,100,100);
@@ -158,7 +158,7 @@ function Enemy(){
   this.speed=64; 
   this.move=function(){
      if(iscoll(enemyPath[this.pathDes].x,enemyPath[this.pathDes].y,this.x,this.y,this.speed/FPS,this.speed/FPS)){  
-if(this.pathDes==enemyPath.length){
+if(this.pathDes==enemyPath.length-1){
    this.hp=0;
    tree=tree-10;}
       else{
