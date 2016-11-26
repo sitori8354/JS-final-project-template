@@ -61,6 +61,7 @@ for(var i=0;i<enemies.length;i++){
    }
    enemies[i].move();
    ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
+   clock++;     
 }
 //血量
    ctx.fillText("血量:1000",100,100);
