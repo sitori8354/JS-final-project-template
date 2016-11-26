@@ -47,13 +47,16 @@ function draw(){
   //ctx.drawImage(tower,towerimg.x,towerimg.y);
   }
   ctx.drawImage(tower,(towerShow.x)-(towerShow.x%32),(towerShow.y)-(towerShow.y%32));
-if(clock%60==0){
-  var newEnemy=new Enemy();
+//敵人工廠
+   if(clock%60==0){  
+   var newEnemy=new Enemy();
   enemies.push(newEnemy);}
 for(var i=0;i<enemies.length;i++){
    enemies[i].move();
    ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
 }
+ctx.fillText("血量:1000",100,100);
+
 }
 setInterval(draw,1000/FPS);
   
