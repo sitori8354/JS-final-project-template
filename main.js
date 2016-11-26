@@ -64,9 +64,9 @@ for(var i=0;i<enemies.length;i++){
    clock++;     
 }
 //血量金錢分數
-   ctx.fillText("血量:1000",0,10,200px,white);
-   //ctx.font="200px";
-   //ctx.fillstyle="white";
+   ctx.fillText("血量:1000",0,10);
+   ctx.font="200px";
+   ctx.fillstyle="white";
    //ctx.fillText("血量:1000",0,10);
    ctx.fillText("分數:0",0,20);      
    ctx.fillText("錢:0",0,30);      
@@ -101,7 +101,7 @@ function iscoll(pointX,pointY,targetX,targetY,targetWidth,targetHeight){
     && pointY<=targetY+targetHeight){
     return true;}else{
       return false;}
-}
+} 
 //設定敵人
 ///製造路徑點
 var enemyPath=[{x:96,y:64},{x:384,y:64},{x:384,y:190},{x:224,y:190},{x:224,y:320},{x:544,y:320},{x:544,y:96}];
