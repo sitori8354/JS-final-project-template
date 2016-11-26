@@ -183,7 +183,7 @@ var enemy=new Enemy()
 
 
 //塔基本設定
-var tower(){
+var tower={
   shoot:function(){},
   fireRate:1,
   readyToShootTime:1,   
