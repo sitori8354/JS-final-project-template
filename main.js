@@ -184,8 +184,8 @@ var enemy=new Enemy()
 
 //塔基本設定
 function tower(){
-  this.range:96,
-  this.aimingEnemyId:null,
+  this.range=96,
+  this.aimingEnemyId=null,
   this.searchEnemy=function(){
   for(var i=0;i<enemies.length;i++){
   var distance=Math.sqrt(
