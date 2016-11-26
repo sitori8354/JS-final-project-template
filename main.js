@@ -68,8 +68,8 @@ for(var i=0;i<enemies.length;i++){
 //血量金錢分數
    ctx.fillText("血量:1000",0,20);
    //ctx.fillText("血量:1000",0,10);
-   ctx.fillText("分數:0",0,35);      
-   ctx.fillText("錢:0",0,50);      
+   ctx.fillText("分數:0",0,45);      
+   ctx.fillText("錢:0",0,70);      
 
 }
 setInterval(draw,1000/FPS);
