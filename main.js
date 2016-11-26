@@ -64,10 +64,9 @@ for(var i=0;i<enemies.length;i++){
    clock++;     
 }
 //血量金錢分數
-   ctx.font="24px";
+   ctx.font="200px";
    ctx.fillstyle="white";
-   ctx.fillText("血量:1000",0,10){ ctx.font="24px";
-   ctx.fillstyle="white";};
+   ctx.fillText("血量:1000",0,10);
    ctx.fillText("分數:0",0,20);      
    ctx.fillText("錢:0",0,30);      
 
