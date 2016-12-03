@@ -196,17 +196,17 @@ var enemy=new Enemy()
 
 //塔基本設定
 var smalltower={
-  shoot:function(id){
+  shoot:function(i){
   console.log("b");
   //畫雷射光(塔>敵人)
   ctx.beginPath();
-  ctx.moveTo(towerShow[id].x,towerShow[id].y);
-  ctx.lineTo(enemies[id].x,enemies[id].y);
+  ctx.moveTo(towerShow[i].x,towerShow[i].y);
+  ctx.lineTo(enemies[i].x,enemies[i].y);
   ctx.strokeStyle='red';
   ctx.lineWidth=3;
   ctx.stroke();
   //扣血
-  enemies[id].hp=enemies[id].hp-this.damage;},
+  enemies[i].hp=enemies[i].hp-this.damage;},
   fireRate:1,
   readyToShootTime:1,   
   range:96,
