@@ -66,8 +66,7 @@ for(var i=0;i<enemies.length;i++){
    }
    enemies[i].move();
    ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
-   //clock++;     
-   smalltower.searchEnemy();   
+   //clock++;   
 }
 //血量金錢分數
   ctx.fillText("血量:"+tree,0,20);
@@ -200,7 +199,7 @@ var smalltower={
   console.log("b");
   //畫雷射光(塔>敵人)
   ctx.beginPath();
-  ctx.moveTo(towerShow[i].x,towerShow[i].y);
+  ctx.moveTo(smalltower.x,smalltower.y);
   ctx.lineTo(enemies[i].x,enemies[i].y);
   ctx.strokeStyle='red';
   ctx.lineWidth=3;
