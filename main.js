@@ -197,6 +197,7 @@ var enemy=new Enemy()
 //塔基本設定
 var smalltower={
   shoot:function(id){
+  console.log("b");
   //畫雷射光(塔>敵人)
   ctx.beginPath();
   ctx.moveTo(towerShow[id].x,towerShow[id].y);
@@ -212,6 +213,7 @@ var smalltower={
   damage:5,  
   aimingEnemyId:null,
   searchEnemy:function(){
+  console.log("a");
   this.readyToShootTime-=1/FPS;
   for(var i=0;i<enemies.length;i++){
   var distance=Math.sqrt(
