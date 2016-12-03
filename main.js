@@ -195,12 +195,23 @@ var enemy=new Enemy()
 
 //塔基本設定
 var smalltower={
-  shoot:function(){},
+  shoot:function(id){
+  //畫雷射光(塔>敵人)
+  ctx.beginPath();
+  ctx.moveTo(towerShow[id].x,towerShow[id].y);
+  ctx.lineTo(enemies[id].x,enemies[id].y);
+  ctx.strokeStyle='red';
+  ctx.lineWidth=3;
+  ctx.stroke();
+  //扣血
+  enemies[id].hp=enemies[id].hp-this.damage;},
   fireRate:1,
   readyToShootTime:1,   
   range:96,
+  damage:5,  
   aimingEnemyId:null,
   searchEnemy:function(){
+  this.readyToShootTime-=1/FPS;
   for(var i=0;i<enemies.length;i++){
   var distance=Math.sqrt(
   Math.pow(this.x-enemies[i].x,2)+Math.pow(this.y-enemies[i].y,2)
@@ -214,8 +225,7 @@ var smalltower={
      return;}
   }
   this.aimingEnemyId=null;
-  }}
-
+  }};
 
 
 
