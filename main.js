@@ -220,7 +220,7 @@ var smalltower={
      this.aimingEnemyId=i;
      //發射時間倒數設定
      if(this.readyToShootTime<=0){
-     this.shoot();
+     this.shoot(i);
      this.readyToShootTime=this.fireRate;}
      return;}
   }
