@@ -213,7 +213,6 @@ var smalltower={
   damage:5,  
   aimingEnemyId:null,
   searchEnemy:function(){
-  console.log("a");
   this.readyToShootTime-=1/FPS;
   for(var i=0;i<enemies.length;i++){
   var distance=Math.sqrt(
@@ -223,6 +222,7 @@ var smalltower={
      this.aimingEnemyId=i;
      //發射時間倒數設定
      if(this.readyToShootTime<=0){
+     console.log("a");        
      this.shoot(i);
      this.readyToShootTime=this.fireRate;}
      return;}
