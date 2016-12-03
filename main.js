@@ -66,14 +66,14 @@ for(var i=0;i<enemies.length;i++){
    }
    enemies[i].move();
    ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
-   clock++;     
+   //clock++;     
    smalltower.searchEnemy();   
 }
 //血量金錢分數
   ctx.fillText("血量:"+tree,0,20);
   ctx.fillText("分數:"+score,0,45);      
   ctx.fillText("錢:"+money,0,70);      
-
+  clock++;
 }
 setInterval(draw,1000/FPS);
   
@@ -166,23 +166,23 @@ if(this.pathDes==enemyPath.length-1){
 this.x=enemyPath[this.pathDes].x;
 this.y=enemyPath[this.pathDes].y;     
 this.pathDes++;
-console.log("go1")
+//console.log("go1")
 if(this.x>enemyPath[this.pathDes].x){
    this.speedx=-64;
    this.speedy=0;
-   console.log("go")
+   //console.log("go")
 }else if(this.x<enemyPath[this.pathDes].x){
    this.speedx=64;
    this.speedy=0;
-   console.log("go3")
+   //console.log("go3")
 }else if(this.y>enemyPath[this.pathDes].y){ 
    this.speedx=0;
    this.speedy=-64;
-   console.log("go4")
+   //console.log("go4")
 }else{
    this.speedx=0;
    this.speedy=64;
-   console.log("go5")
+   //console.log("go5")
 };   
       };
    };
