@@ -7,7 +7,7 @@ var clock=0;
 var tree=100;
 var score=0;
 var money=0;               
-    
+     
 ///畫上基本圖像
 var bglmg=document.createElement("img");
 bglmg.src="images/map.png";
