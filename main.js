@@ -67,7 +67,7 @@ for(var i=0;i<enemies.length;i++){
    enemies[i].move();
    ctx.drawImage(slimeImg,enemies[i].x,enemies[i].y);
    clock++;     
-   tower.searchEnemy();   
+   smalltower.searchEnemy();   
 }
 //血量金錢分數
   ctx.fillText("血量:"+tree,0,20);
