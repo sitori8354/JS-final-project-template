@@ -211,13 +211,15 @@ var smalltower={
   damage:5,  
   aimingEnemyId:null,
   searchEnemy:function(){
+    
   this.readyToShootTime-=1/FPS;
   for(var i=0;i<enemies.length;i++){
   var distance=Math.sqrt(
   Math.pow(this.x-enemies[i].x,2)+Math.pow(this.y-enemies[i].y,2)
   );
   if(distance<=this.range){
-     this.aimingEnemyId=i;
+    console.log("c"); 
+    this.aimingEnemyId=i;
      //發射時間倒數設定
      if(this.readyToShootTime<=0){
      console.log("a");        
